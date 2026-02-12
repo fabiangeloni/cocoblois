@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales | Coco Blois</title>
+    <meta name="description" content="Mini tutoriales de guitarra premium. Licks, trucos y técnicas al instante.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Critical CSS override for this page */
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Coco Blois"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="hover-link">Inicio</a></li>
+            <li><a href="index.html#philosophy" class="hover-link">Filosofía</a></li>
+            <li><a href="index.html#courses" class="hover-link">Cursos</a></li>
+            <li><a href="tutorials.html" class="hover-link text-accent">Tutoriales</a></li>
+            <li><a href="#contact" class="hover-link">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">Menu</div>
+    </nav>
+
+    <!-- Header Section (Smaller than Hero) -->
+    <header class="page-header" data-bgcolor="#0a0a0a">
+        <div class="container">
+            <h1 class="page-title">Arsenal de <span class="text-accent">Licks</span></h1>
+            <p class="page-subtitle">Píldoras de conocimiento puro. Directo al grano.</p>
+        </div>
+    </header>
+
+    <!-- Tutorials Filter & Grid -->
+    <section class="tutorials-section" data-bgcolor="#0f0f0f">
+        <div class="container">
+
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="blues">Blues</button>
+                <button class="filter-btn" data-filter="rock">Rock</button>
+                <button class="filter-btn" data-filter="shred">Shred</button>
+                <button class="filter-btn" data-filter="theory">Teoría</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="tutorials-grid">
+
+                <!-- Card 1: Blues -->
+                <div class="tutorial-card" data-category="blues">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$5</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1444623151656-030273ddb785?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Blues Lick">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Blues • Intermedio</div>
+                        <h3>The SRV Shuffle</h3>
+                        <p>Aprende el ritmo texano definitivo en 10 minutos.</p>
+                        <a href="#" class="btn-buy">Comprar - $5</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Rock -->
+                <div class="tutorial-card" data-category="rock">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$7</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1549298240-0d8e60513026?q=80&w=600&auto=format&fit=crop"
+                            alt="Rock Riff">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Rock • Principiante</div>
+                        <h3>Power Chords Satánicos</h3>
+                        <p>La base del metal y el hard rock explicada simple.</p>
+                        <a href="#" class="btn-buy">Comprar - $7</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Shred -->
+                <div class="tutorial-card" data-category="shred">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$10</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=600&auto=format&fit=crop"
+                            alt="Shred Lick">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Shred • Avanzado</div>
+                        <h3>Sweep Picking 101</h3>
+                        <p>Arpegios a la velocidad de la luz. Limpieza total.</p>
+                        <a href="#" class="btn-buy">Comprar - $10</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Theory -->
+                <div class="tutorial-card" data-category="theory">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$4</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1601266289415-e7339a97d19b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd1aXRhcnJhfGVufDB8fDB8fHwy"
+                            alt="Theory">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Teoría • Todos los niveles</div>
+                        <h3>Modos Griegos Desmitificados</h3>
+                        <p>Entiende por fin para qué sirve el Dórico.</p>
+                        <a href="#" class="btn-buy">Comprar - $4</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Blues -->
+                <div class="tutorial-card" data-category="blues">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$6</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd1aXRhcnJhfGVufDB8fDB8fHwy"
+                            alt="Slow Blues">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Blues • Avanzado</div>
+                        <h3>Bending Emocional</h3>
+                        <p>Haz llorar a la guitarra como BB King.</p>
+                        <a href="#" class="btn-buy">Comprar - $6</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Shred -->
+                <div class="tutorial-card" data-category="shred">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$8</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?q=80&w=600&auto=format&fit=crop"
+                            alt="Tapping">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Shred • Intermedio</div>
+                        <h3>Tapping a dos manos</h3>
+                        <p>Estilo Van Halen para impresionar a todos.</p>
+                        <a href="#" class="btn-buy">Comprar - $8</a>
+                    </div>
+                </div>
+
+                <!-- Card 7: Rock -->
+                <div class="tutorial-card" data-category="rock">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$5</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1601266289415-e7339a97d19b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd1aXRhcnJhfGVufDB8fDB8fHwy"
+                            alt="Pedalboard">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Rock • Todos</div>
+                        <h3>Secretos del Tono</h3>
+                        <p>Cómo configurar tu distorsión y delay.</p>
+                        <a href="#" class="btn-buy">Comprar - $5</a>
+                    </div>
+                </div>
+
+                <!-- Card 8: Theory -->
+                <div class="tutorial-card" data-category="theory">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$3</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=600&auto=format&fit=crop"
+                            alt="Tablature">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Teoría • Básico</div>
+                        <h3>Leer Partituras Rápido</h3>
+                        <p>Deja de depender solo de las tabs.</p>
+                        <a href="#" class="btn-buy">Comprar - $3</a>
+                    </div>
+                </div>
+
+                <!-- Card 9: Blues -->
+                <div class="tutorial-card" data-category="blues">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$6</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=600&auto=format&fit=crop"
+                            alt="Acoustic Blues">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Blues • Acústico</div>
+                        <h3>Delta Blues Style</h3>
+                        <p>Fingerstyle rítmico y slide guitar.</p>
+                        <a href="#" class="btn-buy">Comprar - $6</a>
+                    </div>
+                </div>
+
+                <!-- Card 10: Shred -->
+                <div class="tutorial-card" data-category="shred">
+                    <div class="tut-media">
+                        <div class="tut-overlay">
+                            <span class="tut-price">$9</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VpdGFycmF8ZW58MHx8MHx8fDI%3D"
+                            alt="Fast Picking">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="tut-content">
+                        <div class="tut-meta">Shred • Experto</div>
+                        <h3>Economía de Púa</h3>
+                        <p>Toca más rápido cansándote menos.</p>
+                        <a href="#" class="btn-buy">Comprar - $9</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>COCO BLOIS</h2>
+                    <p>Elevando el estándar de la educación musical online.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Tiktok</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coco Blois. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
