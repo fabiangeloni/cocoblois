@@ -142,7 +142,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             opacity: 1,
                             display: 'block',
                             duration: 0.4,
-                            ease: "power2.out"
+                            ease: "power2.out",
+                            onComplete: () => {
+                                // Clear props (especially transform) to let CSS Grid control layout
+                                // This prevents "misalignment" or gaps
+                                gsap.set(card, { clearProps: "transform,scale,opacity" });
+                            }
                         });
                     } else {
                         gsap.to(card, {
