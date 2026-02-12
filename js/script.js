@@ -163,4 +163,68 @@ document.addEventListener("DOMContentLoaded", () => {
         return filter === cardCat;
     }
 
+    // 5. Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    if (menuToggle && mobileOverlay) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+
+            if (mobileOverlay.classList.contains('active')) {
+                // Open animation
+                gsap.to(mobileLinks, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.5,
+                    stagger: 0.1,
+                    ease: "power3.out",
+                    delay: 0.2
+                });
+                // Optional: Lenis stop
+                if (typeof lenis !== 'undefined') lenis.stop();
+            } else {
+                // Close animation
+                gsap.to(mobileLinks, {
+                    y: 20,
+                    opacity: 0,
+                    duration: 0.3,
+                    stagger: 0.05,
+                    ease: "power3.in"
+                });
+                if (typeof lenis !== 'undefined') lenis.start();
+            }
+        });
+
+        // Close on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                if (typeof lenis !== 'undefined') lenis.start();
+            });
+        });
+    }
+
+    // 6. Audio FAB Logic
+    const audioFab = document.querySelector('.audio-fab');
+    const audio = document.getElementById('demo-audio');
+    const playIconFab = document.querySelector('.play-icon-fab');
+
+    if (audioFab && audio) {
+        audioFab.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().catch(e => console.log("Audio play failed (user interaction needed):", e));
+                audioFab.classList.add('playing');
+                if (playIconFab) playIconFab.textContent = '⏸';
+            } else {
+                audio.pause();
+                audioFab.classList.remove('playing');
+                if (playIconFab) playIconFab.textContent = '▶';
+            }
+        });
+    }
+
 });
