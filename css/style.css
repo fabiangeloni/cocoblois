@@ -229,7 +229,7 @@ h3 {
 .btn-primary {
     display: inline-block;
     margin-top: 3rem;
-    padding: 1rem 3rem;
+    padding: 1rem;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
     text-transform: uppercase;
@@ -844,9 +844,7 @@ h3 {
     transition: fill 0.3s ease;
 }
 
-.audio-fab.playing .play-icon-fab {
-    /* content handled in JS */
-}
+
 
 /* Playing Animation (Pulse) */
 .audio-fab.playing {
